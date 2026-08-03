@@ -32,7 +32,7 @@ int main()
     cout << "Multiplication = " << multiply(x, y) << endl;
 
     cout << "Integer Subtraction = " << subtract(x, y) << endl;
-    cout << "Float Subtraction = " << subtract(p, q) << endl;
+    cout << "Float subtraction = " << subtract(p, q) << endl;
 
     return 0;
 }
