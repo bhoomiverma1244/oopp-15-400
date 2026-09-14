@@ -1,34 +1,44 @@
-//wap to scan a student name roll no brach sec and marks of 5 subjects using modular pragrraming technique.
-#include<iostream>
+#include <iostream>
 using namespace std;
-void input(string name,string section ,string branch,int roll, int marks[]){
-    cout<<"enter name;"
-    cin>>name;
-    cout<<"enter branch:"
-    cin>>branch;
-    cout<<"enter section:"
-    cin>>section;
-    cout<<"enter roll no:";
-    cin>>roll;
-    for(int i=0;i<5;i++)
-    {
-        cout<<"enter marks of"<<i+1<<":"
-        cin>>marks[i];
+
+class Student {
+public:
+    string name;
+    int roll;
+    string branch;
+
+    void input() {
+        cout << "Enter name: ";
+        cin >> name;
+
+        cout << "Enter roll number: ";
+        cin >> roll;
+
+        cout << "Enter branch: ";
+        cin >> branch;
     }
 
-}
-void show(string name,string branch,string section, int roll,int marks[],int){
-    cout<<"name:"<<name<<endl;
-    
-}
-void calc(int marks[],int &total,float &percent)
-{
-    for(int i=0;i<5;i++)
+    void display() {
+        cout << "Name: " << name << endl;
+        cout << "Roll No: " << roll << endl;
+        cout << "Branch: " << branch << endl;
+    }
+};
 
-}
-imt main(){
-    string name,section,branch;
-    int roll,marks[5],total=0;
-    float percent
+int main() {
+    Student s1, s2;
 
-})
+    cout << "Enter details of Student 1:\n";
+    s1.input();
+
+    cout << "\nEnter details of Student 2:\n";
+    s2.input();
+
+    cout << "\n--- Student 1 Details ---\n";
+    s1.display();
+
+    cout << "\n--- Student 2 Details ---\n";
+    s2.display();
+
+    return 0;
+}
