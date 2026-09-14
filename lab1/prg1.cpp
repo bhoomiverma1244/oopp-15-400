@@ -34,10 +34,10 @@ int main() {
     cout << "\nEnter details of Student 2:\n";
     s2.input();
 
-    cout << "\n--- Student 1 Details ---\n";
+    cout << "\n Student 1 Details \n";
     s1.display();
 
-    cout << "\n--- Student 2 Details ---\n";
+    cout << "\n Student 2 Details \n";
     s2.display();
 
     return 0;
